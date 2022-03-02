@@ -1,0 +1,57 @@
+1) setup blackjack 
+	- deal cards to dealer hand
+		- one up, one hidden
+	- deal cards to player hand
+		- two cards, both visible to player
+		
+2) player hits until bust, blackjack, or stays
+	- if blackjack, player wins automatically. Dealer does not reveal card or hit/stay.
+
+3) If player stay (no bust), dealer reveals hidden card and hit until stay/blackjack/bust.
+
+4) If dealer closer to 21 no bust than player, dealer wins. Otherwise, player wins. 
+
+
+
+
+Needed methods:
+checkState() - checks if blackjack or bust. returns integer based on state.
+hit() - draws card from deck, adds to hand.
+stand() - sets status to "stand", saves hand total?
+dealerPlay() - if player is stand, dealer hit until stand, blackjack, or bust.
+
+
+play() Pseudocode
+
+1) setup game, print dealer up card, print player cards.
+2) do {
+		set game loop boolean false
+		a) checkState(), end game loop if blackjack OR bust, print win statement depending on result. 
+		b)ask player hit or stand
+			run hit method on hit, set game loop boolean true.
+			run stand method on stand, set game loop boolean true.
+	} while (game loop boolean true);
+
+
+
+checkSquare() pseudocode
+
+	
+	
+	
+hit() pseudocode
+
+
+
+
+stand() pseudocode
+
+
+
+
+dealerPlay() pseudocode
+
+
+
+
+
